@@ -1,0 +1,88 @@
+:root{
+    --container-color: #BDCBDB;
+    --button-color: #083366;
+    --border-radius: 20px;
+    --padding: 15px;
+}
+
+body {
+    font-family: 'Helvetica';
+}
+
+#Welcome{
+    font-family: 'Impact, Charcoal, sans-serif';
+    text-align: center
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link{
+    background-color: #87A9DE;
+    padding: var(--padding);
+    text-align: center;
+    border: 2px solid black;
+}
+
+#Books{
+    display: grid;
+    grid-template-columns: repeat(1fr, 2);
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.Book{
+    text-align: center;
+    padding: var(--padding);
+    background-color: var(--container-color);
+    border-radius: var(--border-radius);
+}
+
+img{
+    max-width: 200px;
+}
+
+#Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 30px;
+    height: 15px;
+    border-radius: var(--border-radius);
+}
+
+button{
+    padding: 10px, 20px;
+    background-color: white;
+    color: var(--button-color);
+    border-radius: var(--border-radius);
+    border: 1px var(--button-color);
+}
+
+button:hover{
+    background-color: var(--button-color);
+    color: white;
+}
+
+footer{
+    text-align: center;
+    font-size: 9px;
+    background-color: #001D3B;
+    color: white;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: #1EAFFC;
+}
