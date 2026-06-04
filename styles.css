@@ -1,17 +1,18 @@
 :root{
     --container-color: #BDCBDB;
     --button-color: #083366;
-    --border-radius: 20px;
+    --border-radius: 5px;
     --padding: 15px;
 }
 
 body {
-    font-family: 'Helvetica';
+    font-family: Helvetica;
 }
 
 #Welcome{
-    font-family: 'Impact, Charcoal, sans-serif';
-    text-align: center
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+    padding: 50px;
 }
 
 nav{
@@ -19,9 +20,11 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .nav-link{
+    width: 100%;
     background-color: #87A9DE;
     padding: var(--padding);
     text-align: center;
@@ -30,12 +33,16 @@ nav{
 
 #Books{
     display: grid;
-    grid-template-columns: repeat(1fr, 2);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 15px;
 }
 
 .Book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
     text-align: center;
     padding: var(--padding);
     background-color: var(--container-color);
@@ -44,27 +51,50 @@ nav{
 
 img{
     max-width: 200px;
+    max-height: 300px;
 }
 
 #Contact{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
-input{
-    width: 30px;
-    height: 15px;
+form{
+    width: 100%;
+}
+
+legend{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+    width: 40%;
+}
+
+#name{
+    width: 20%;
+    border-radius: var(--border-radius);
+}
+
+#email{
+    width: 40%;
+    border-radius: var(--border-radius);
+}
+
+#msg{
+    width: 40%;
     border-radius: var(--border-radius);
 }
 
 button{
-    padding: 10px, 20px;
+    font-size: 16px;
+    padding: var(--padding);
     background-color: white;
     color: var(--button-color);
     border-radius: var(--border-radius);
-    border: 1px var(--button-color);
+    border: 1px solid var(--button-color);
 }
 
 button:hover{
@@ -72,9 +102,11 @@ button:hover{
     color: white;
 }
 
-footer{
+#info{
+    margin-top: 30px;
+    padding: 50px;
     text-align: center;
-    font-size: 9px;
+    font-size: 13px;
     background-color: #001D3B;
     color: white;
 }
