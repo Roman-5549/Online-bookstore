@@ -17,3 +17,9 @@ close_btns.forEach((btn, index) => {
         }
     });
 });
+
+const current_date = new Date();
+const date_element = document.createElement('p');
+date_element.innerText = current_date;
+const info_section = document.getElementById('info');
+info_section.appendChild(date_element);

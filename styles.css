@@ -69,6 +69,7 @@ img{
     visibility: hidden;
     position: fixed;
     width: 50%;
+    box-shadow: 2px 2px 10px black;
 }
 
 .open-full-desc{
@@ -123,7 +124,7 @@ button{
     color: var(--button-color);
     border-radius: var(--border-radius);
     border: 1px solid var(--button-color);
-    transition: background-color 0.5s ease-in;
+    transition: background-color 0.25s ease-in;
 }
 
 button:hover{
