@@ -23,3 +23,19 @@ const date_element = document.createElement('p');
 date_element.innerText = current_date;
 const info_section = document.getElementById('info');
 info_section.appendChild(date_element);
+
+const app_form = document.getElementById('app-form');
+const name_input = document.getElementById('name');
+const email_input = document.getElementById('email');
+const msg_input = document.getElementById('msg');
+
+app_form.addEventListener('submit', function(event) {
+    if(name_input.value.trim() === "" || email_input.value.trim() === "" || msg_input.value.trim() === ""){
+        event.preventDefault();
+        alert("You need to fill out all the inputs in the form !");
+        name_input.style.borderColor = 'red';
+        email_input.style.borderColor = 'red';
+        msg_input.style.borderColor = 'red';
+    };
+});
+
