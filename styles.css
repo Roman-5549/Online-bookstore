@@ -7,12 +7,17 @@
 
 body {
     font-family: Helvetica;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #Welcome{
     font-family: "Arial Black", Gadget, sans-serif;
     text-align: center;
     padding: 50px;
+    color: white;
 }
 
 nav{
@@ -58,6 +63,9 @@ img{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
 }
 
 form{
@@ -65,12 +73,15 @@ form{
 }
 
 legend{
+    background-color: var(--container-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     gap: 5px;
     width: 40%;
+    box-shadow: 12px 12px 2px 1px rgb(255 0 0/ 0.2);
+    padding: var(--padding);
 }
 
 #name{
@@ -95,6 +106,7 @@ button{
     color: var(--button-color);
     border-radius: var(--border-radius);
     border: 1px solid var(--button-color);
+    transition: background-color 0.5s ease-in;
 }
 
 button:hover{
@@ -113,8 +125,25 @@ button:hover{
 
 a{
     color: black;
+    transition: color 0.25s linear;
 }
 
 a:hover{
-    color: #1EAFFC;
+    color: #2A27F5;
+}
+
+@media (max-width: 600px) {
+    #Books {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
