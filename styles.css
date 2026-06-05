@@ -59,6 +59,23 @@ img{
     max-height: 300px;
 }
 
+.full-desc-container {
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    position: fixed;
+    width: 50%;
+}
+
+.open-full-desc{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 #Contact{
     display: flex;
     flex-direction: column;
